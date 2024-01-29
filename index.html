@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Memes</title>
+    <link rel="stylesheet" href="./global.css" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+  </head>
+  <body>
+    <div class="relative my-[20px] mx-auto w-[350px]" id="app">
+      <h3 class="text-2xl font-bold">Select Your Current Emotion</h3>
+      <h3 class="mt-2 text-3xl font-semibold font-[Honk]">Purrfect Meme Picker 🐱</h3>
+      <div class="grid w-full mt-[40px] rounded-[4px] border-4 border-[#64440D]" id="cat-emotion"></div>
+      <!-- gif -->
+      <div class="flex justify-center gap-3 mt-3">
+        <input type="checkbox" name="gif" id="gif" />
+        <label for="gif">Only gif</label>
+      </div>
+      <!-- get image -->
+      <button id="get-img-btn" class="w-full mt-3 p-2 rounded-md font-medium bg-[#F3CF91] hover:bg-[#EDBB64]">Get Image</button>
+    </div>
+    <!-- display image -->
+    <div class="hidden absolute top-[100px] left-[470px] p-5  w-[400px] rounded-xl bg-[#F3CF91]" id="hidden">
+      <button class="text-red-500 font-bold text-xl hover:text-red-600" id="close-btn">X</button>
+
+      <div class="p-5" id="display-image">
+        <!-- image here -->
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

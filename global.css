@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.clicked {
+    font-weight: 500;
+    background-color: #F2E4D9;
+    accent-color: #d4a373;
+    color: #7D4718;
+}
